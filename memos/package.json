@@ -1,0 +1,11 @@
+{
+  "name": "memos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./bash/mkdirByParam.sh images/haha"
+  },
+  "author": "",
+  "license": "ISC"
+}
