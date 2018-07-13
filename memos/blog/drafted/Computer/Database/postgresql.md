@@ -7,10 +7,12 @@
 - http://killins.egloos.com/3078132
 - 퀴즈 사이트 :: https://pgexercises.com/questions/basic/selectspecific.html
 
+## Index
+
 ## Create User
 
 ```
-postgres=# create role uber_clone with login password 'admin1234';
+postgres=# create role uber_clone with login password 'admin1234';ㅍ
 
 or
 postgres=# create user uber_clone;
