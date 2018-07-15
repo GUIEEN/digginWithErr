@@ -2,18 +2,18 @@ import React, { Component } from 'react'
 import './App.css'
 
 class App extends Component {
-  render () {
+  render() {
     const helloWorld = 'Welcome to the Road to learn React'
-    const user = {first: 'Seung', last: 'Kwak'}
+    const user = { first: 'Seung', last: 'Kwak' }
     console.log(Object.keys(user))
-    var arr = Object.keys(user).map(function (i) {
+    var arr = Object.keys(user).map(function(i) {
       return user[i]
     })
     return (
-      <div className='App'>
+      <div className="App">
         <h2>{helloWorld}</h2> <br />
         {arr} <br />
-        <Title children='qwer' />
+        <Title children="qwer" />
         <Title>Hello world</Title> <br />
         {user.first}
         <Search />
@@ -37,21 +37,21 @@ class App extends Component {
 
 class Search extends Component {
   state = {
-    query: '',
+    query: ''
   }
- 
+
   handleInputChange = () => {
     this.setState({
       query: this.search.value
     })
   }
- 
+
   render() {
     return (
       <form>
         <input
           placeholder="Search for..."
-          ref={input => this.search = input}
+          ref={input => (this.search = input)}
           onChange={this.handleInputChange}
         />
         <p>{this.state.query}</p>
@@ -60,13 +60,13 @@ class Search extends Component {
   }
 }
 
-function Title (props) {
+function Title(props) {
   return (
-    <h1 className='lots-of-styles-here'>
+    <h1 className="lots-of-styles-here">
       <strong>
-        <i className='something-else'>
+        <i className="something-else">
           {console.log(props)}
-          { props.children }
+          {props.children}
         </i>
       </strong>
     </h1>
